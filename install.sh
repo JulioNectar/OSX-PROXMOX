@@ -30,7 +30,7 @@ then
 	echo "Retrying 'apt-get update' ..."
 	echo " "
 
-	apt-get update >> /tmp/install-osx-proxmox.log 2>> /tmp/install-osx-proxmox.log
+	/tmp/install-osx-proxmox.log 2>> /tmp/install-osx-proxmox.log
 	
 	if [ $? -ne 0 ]; then echo "Error with 'apt-get update' ..."; exit; fi		
 fi
